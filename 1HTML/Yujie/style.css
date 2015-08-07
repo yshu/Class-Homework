@@ -2,18 +2,18 @@ body {
 	width: 1024px;
 	margin-left: 47px;
 	margin-right: 100px;
-    font-family: Verdana;
-    background: url(../../../1HTML/page-mock.png);
+	font-family: Verdana;
+	background: url(../../../1HTML/page-mock.png);
 	background-size: 1024px 885px;
 	background-repeat: no-repeat;
 }
 
 h1 {
-    color: #666666;
-    margin-left: 220px;
-    margin-top: 42px;
-    font-size: 48px;
-    font-weight: lighter;
+	color: #666666;
+	margin-left: 220px;
+	margin-top: 42px;
+	font-size: 48px;
+	font-weight: lighter;
 }
 
 h2 {
