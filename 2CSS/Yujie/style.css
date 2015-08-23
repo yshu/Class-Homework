@@ -1,0 +1,121 @@
+body {
+	width: 900px;
+	margin: 50px;
+	font-family: Verdana;
+}
+
+h1 {
+	font-size: 25px;
+	letter-spacing: 5px;
+}
+
+p {
+	font-size: 13px;
+}
+
+.circular {
+	width: 180px;
+	height: 180px;
+	border-radius: 90px;
+	-webkit-border-radius: 90px;
+	-moz-border-radius: 90px;
+	background: url(mug.png) no-repeat center;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	float: left;
+	}
+
+.person {
+	margin-left: 220px;
+	padding-top: 50px;
+	line-height: 10px;
+}
+
+.email {
+	float: right;
+	margin-top: -70px;
+	line-height: 10px;
+	color: #808080;
+	text-align: right;
+}
+
+.email p {
+	font-size: 13px;
+}
+
+.number ul {
+	list-style-type: none;
+	text-transform: uppercase;
+	margin-left: -70px;
+	margin-top: 100px;
+}
+
+.number li {
+	display: inline-block;
+	width: 100px;
+	margin: 28px;
+	font-weight: lighter;
+	line-height: 20px;
+}
+
+.number li:nth-child(odd) {
+	font-size: 320%;
+}
+
+.number li:nth-child(even) {
+	margin-left: -70px;
+	font-size: 90%;
+	color: #808080;
+}
+
+.number li:nth-child(4) {
+	margin-left: -40px;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 40px;
+    border-bottom: 3px solid black;
+    margin-top: 20px;
+}
+
+.leftside {
+	float: left;
+	width: 400px;
+}
+
+.rightside {
+	float: right;
+}
+
+.plaintext {
+	line-height: 195%;
+}
+
+.date {
+	color: #909090;
+}
+
+.list {
+	margin-left: 20px;
+	list-style: circle outside none;
+	display: list-item;
+}
+
+.position, .school {
+	font-weight: bold;
+}
+
+.inlineblock {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+
+.list2:before {
+	content: "- ";
+	position: relative;
+}
