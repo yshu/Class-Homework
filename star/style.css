@@ -1,0 +1,14 @@
+li {
+   display: inline;
+   font-size: 60px;
+   color: orange;
+}
+
+ul {
+   margin-left: 100px;
+}
+
+p {
+   margin-left: 150px;
+   margin-top: 40px;
+}
