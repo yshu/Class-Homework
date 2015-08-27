@@ -26,7 +26,6 @@ $("li").on("click", function(){
     toggleFlag = false;
     var count = $(this).index() + 1;
     $(".rating").text("Star ratings is: " + count);
-    //alert($(this).index());
   }
   else {
     $("li").addClass("star");
