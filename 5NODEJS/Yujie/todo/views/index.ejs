@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <h1><%= title %></h1>
+    <form class="todoform" name="frm" action="/create" method="post" accept-charset="utf-8">
+      <input class="input" type="text" name="content" onkeydown="if (event.keyCode == 13) document.getElementById('sendButton').click()"/>
+      <span>
+        <button id="sendButton" onclick="return IsEmpty()" type="submit" class="button">
+          <i class="fa fa-plus fa-lg"></i>
+        </button>
+      </span>
+    </form>
+    
+
+  <% todos.forEach( function ( todo ){ %>
+    <div class="row">
+      <span class="check-todo">
+        <%= todo.content %>
+      </span>
+
+      <span class="actionitems" >
+        <span>
+          <a class="complete" href="#" title="This todo item is completed">
+            <i class="fa fa-check-square-o fa-lg"></i>
+          </a>   
+        </span>
+        <span>
+          <a href="/edit/<%= todo._id %>" title="Update this todo item">
+            <i class="fa fa-pencil fa-lg"></i>
+          </a>       
+        </span>
+        <span>
+          <a href="/destroy/<%= todo._id %>" title="Delete this todo item">
+            <i class="fa fa-trash fa-lg"></i>
+          </a>
+        </span>
+      </span>
+
+    </div>
+  <% }); %>
+
+  </div>
+  <script src="/javascripts/style.js"></script> 
+  </body>
+</html>
